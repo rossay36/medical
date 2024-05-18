@@ -1,0 +1,66 @@
+.heroSone {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+}
+
+.heroSone::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/nurse4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.heroSone__container {
+  --font-size: 1.3rem;
+  --font-weight: 700;
+  --line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.heroSone__p {
+  max-width: 40%;
+}
+
+.heroSone__h1 {
+  max-width: max-content;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--lightBlue);
+  color: var(--textColorBlue);
+}
+.heroSone__h1-1 {
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+@media screen and (max-width: 1187px) {
+  .heroSone__h1-1 {
+    color: var(--textColorBlue);
+  }
+}
+@media screen and (max-width: 700px) {
+  .heroSone__container {
+    padding: 1rem;
+  }
+  .heroSone__p {
+    max-width: 100%;
+    color: var(--textColorBlue);
+  }
+
+  .heroSone__btn {
+    display: grid;
+  }
+}

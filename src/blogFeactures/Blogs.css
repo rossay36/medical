@@ -1,0 +1,16 @@
+.Blogs {
+  max-width: 100%;
+}
+
+.Blogs__wrapper {
+  padding: 1rem;
+}
+
+.Blogs__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Blogs__container > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}

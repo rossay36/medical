@@ -1,0 +1,43 @@
+.homehero {
+  position: relative;
+}
+
+.homehero__button {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  inset: auto 44% 10rem auto;
+}
+
+.homehero__but {
+  padding: 0.3rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .homehero__button {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    inset: auto 44% 12rem auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .homehero__button {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    inset: auto 44% 2rem auto;
+  }
+}
+@media screen and (max-width: 440px) {
+  .homehero__button {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    inset: auto 30% 1.5rem auto;
+  }
+}

@@ -1,0 +1,16 @@
+.HeadTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.HeadTitle h3 {
+  align-self: center;
+  border-radius: 0.2rem;
+  background-color: var(--lightBlue);
+  color: var(--white);
+  max-width: max-content;
+  padding: 0.5rem;
+}

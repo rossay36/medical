@@ -1,0 +1,56 @@
+.ServiceLeftbar {
+  flex: 4;
+  max-width: 100%;
+  min-height: 100vh;
+  color: #000;
+  margin: 4rem 1rem;
+}
+
+.ServiceLeftbar__box {
+  max-width: 100%;
+  padding: 2rem;
+  background-color: var(--primary-withe);
+}
+.ServiceLeftbar__box > * {
+  margin-bottom: 2rem;
+}
+
+.ServiceLeftbar__rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: var(--white);
+  color: #000;
+  max-height: 20px;
+}
+
+.ServiceLeftbar__bottom {
+  position: relative;
+  max-width: 100%;
+  max-height: 105vh;
+  background-image: url("../../assets/net.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 1rem;
+  background-color: aqua;
+}
+
+.ServiceLeftbar__bottom button {
+  margin-top: 1rem;
+}
+.ServiceLeftbar__bottom h1 {
+  margin-top: 2rem;
+}
+
+.ServiceLeftbar__img {
+  display: flex;
+  justify-content: flex-end;
+}
+.ServiceLeftbar__img img {
+  max-width: 20rem;
+
+  object-position: right;
+}

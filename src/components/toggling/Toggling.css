@@ -1,0 +1,38 @@
+.Toggling {
+  position: relative;
+  max-width: 100%;
+  min-height: max-content;
+  display: grid;
+}
+
+.Toggling__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+.Toggling__container {
+  padding: 1rem;
+  border: 1px solid #adadad;
+  transition: 1000ms;
+}
+
+.actives {
+  display: none;
+}
+
+.Toggling__components {
+  display: grid;
+  gap: 1rem;
+}
+
+.Toggling__icons {
+  font-size: 2rem;
+}

@@ -1,0 +1,93 @@
+.MainStep {
+  max-width: 100%;
+  padding: 3rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.MainStep h1 {
+  color: var(--white);
+}
+
+.MainStep__col {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.MainStep__col > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.MainStep__heading {
+  max-width: max-content;
+  background-color: var(--lightBlue);
+  margin-inline: auto;
+  padding: 0.5rem;
+  color: var(--white);
+}
+
+.MainStep__title {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin: 2rem;
+}
+
+.MainStep__box {
+  /* position: relative; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  line-height: 2;
+  background-color: rgb(251, 251, 247);
+  padding: 2rem 0;
+  background-color: var(--primary-color);
+}
+
+.MainStep__box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainStep__img {
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.MainStep__img img {
+  max-width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-inline: auto;
+  object-fit: cover;
+  transition: ease-in-out;
+}
+.MainStep__box :hover img {
+  border-radius: 50%;
+  transform: perspective(200px) translateZ(1px);
+}
+
+.MainStep__box span {
+  position: absolute;
+  inset: auto 1.5rem 2rem auto;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--lightBlue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  z-index: 1;
+}
+
+.MainStep__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}

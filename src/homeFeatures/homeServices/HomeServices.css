@@ -1,0 +1,65 @@
+.HomeServices {
+  max-width: 100%;
+  padding: 3rem 1rem;
+  display: grid;
+}
+
+.HomeServices__title {
+  text-align: center;
+  padding: 2rem;
+  text-align: center;
+}
+.HomeServices__title h1 {
+  letter-spacing: 0.3rem;
+}
+.HomeServices__title-h4 {
+  background-color: var(--lightBlue);
+  max-width: max-content;
+  padding: 0.5rem;
+
+  margin-inline: auto;
+}
+
+.HomeServices__col {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #dbdfdb;
+}
+.HomeServices__col > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.HomeServices__boxs {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #dbdfdb;
+}
+
+.HomeServices__boxs > * {
+  margin: 0.5rem;
+}
+
+.HomeServices__boxs h4 {
+  margin-bottom: 2rem;
+}
+
+.HomeServices__boxs-img,
+.HomeServices__boxs-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeServices__boxs img {
+  width: 6rem;
+  height: 4rem;
+  margin-top: 2rem;
+  transition: 1000ms;
+}
+.HomeServices__boxs:hover img {
+  transform: perspective(200px) rotateY(200deg);
+}

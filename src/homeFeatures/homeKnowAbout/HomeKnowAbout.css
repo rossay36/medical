@@ -1,0 +1,107 @@
+.HomeKnowAbout {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.HomeKnowAbout > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.HomeKnowAbout__boxs {
+  display: grid;
+  gap: 1rem;
+}
+
+.HomeKnowAbout__aboutUs {
+  background-color: var(--textColorBlue);
+  max-width: max-content;
+  padding: 0.5rem;
+  color: var(--white);
+}
+
+.HomeKnowAbout__good {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.HomeKnowAbout__good-icon {
+  color: green;
+}
+
+.HomeKnowAbout__aboutUs {
+  margin: 1rem;
+}
+
+.HomeKnowAbout__test h1,
+p {
+  margin: 1rem;
+}
+
+.HomeKnowAbout__btn {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .HomeKnowAbout {
+    display: grid;
+    gap: 2rem;
+  }
+  .HomeKnowAbout__boxs {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 3rem;
+  }
+
+  /* .HomeKnowAbout__img {
+    transform: perspective(400px) scaleY(1.5) !important;
+  } */
+  .HomeKnowAbout__boxs > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .HomeKnowAbout__test {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .HomeKnowAbout__btn {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .HomeKnowAbout {
+    display: grid;
+    gap: 2rem;
+  }
+  .HomeKnowAbout__boxs {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .HomeKnowAbout__boxs > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .HomeKnowAbout__test {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .HomeKnowAbout__btn {
+    margin: 1rem 0;
+  }
+}

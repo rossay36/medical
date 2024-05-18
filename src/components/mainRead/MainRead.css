@@ -1,0 +1,29 @@
+.MainRead {
+  max-width: 100%;
+  min-height: 200px;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.MainRead > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(36rem - 100%) * 999);
+  margin: 2rem 0;
+}
+
+.MainRead__rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.MainRead__rows h1 {
+  color: var(--white);
+}

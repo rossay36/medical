@@ -1,0 +1,37 @@
+.text {
+  max-width: 100%;
+  min-height: 300px;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.text__h1 {
+  flex: 6;
+}
+.text__h1 h1 {
+  color: var(--white);
+}
+
+.text__p {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 620px) {
+  .text {
+    display: grid;
+  }
+  .text__h1 h1 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}

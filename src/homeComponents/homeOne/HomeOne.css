@@ -1,0 +1,12 @@
+.HomeOne {
+  position: relative;
+  max-width: 100%;
+}
+
+.HomeOne__Link {
+  position: absolute;
+  display: grid;
+  inset: 200px 2rem auto auto;
+  position: fixed;
+  z-index: 2;
+}

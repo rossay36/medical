@@ -1,0 +1,89 @@
+.HomeTeams {
+  max-width: 100%;
+}
+
+.HomeTeams__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.HomeTeams__container > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.HomeTeams__box {
+  overflow-y: hidden;
+}
+
+.HomeTeams__img {
+  position: relative;
+  cursor: pointer;
+}
+
+.HomeTeams__icons {
+  position: absolute;
+  display: grid;
+  gap: 1rem;
+  max-width: max-content;
+  min-height: min-content;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  inset: -6rem 1.3rem auto auto;
+  opacity: 0;
+  transition: 1000ms;
+  z-index: 2;
+}
+
+.HomeTeams__img:hover .HomeTeams__icons {
+  transform: perspective(400px) translateY(7rem);
+  opacity: 1;
+}
+
+.HomeTeams__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.HomeTeams__icon:hover {
+  background-color: var(--lightBlue);
+}
+
+.HomeTeams__name {
+  position: absolute;
+  inset: auto auto 0 28%;
+  text-align: center;
+  display: grid;
+  gap: 0.6rem;
+  align-items: center;
+  max-width: 100%;
+  margin-inline: auto;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  border: 1px solid lavender;
+  border-radius: 0.4rem;
+  transition: 1000ms;
+}
+
+.HomeTeams__name p {
+  color: var(--textColorBlue);
+}
+
+.HomeTeams__img:hover .HomeTeams__name {
+  transform: perspective(400px) translateY(-2rem);
+}
+
+.HomeTeams__img img {
+  max-width: 100%;
+  min-height: 25rem;
+  object-fit: cover;
+  transition: 1000ms;
+}
+.HomeTeams__img:hover img {
+  transform: perspective(200px) translateZ(-10px);
+}

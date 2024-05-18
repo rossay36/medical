@@ -1,0 +1,57 @@
+.MainAbout {
+  max-width: 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.MainAbout > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.MainAbout__text-icons {
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.MainAbout__groups {
+  display: grid;
+  gap: 1rem;
+}
+
+.MainAbout__icons-headings {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.MainAbout__signature {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.MainAbout__signature-text {
+  display: grid;
+}
+
+.MainAbout__signature-img {
+  margin: 2rem 0;
+}
+.MainAbout__signature-img img {
+  margin: -2.8rem 0 0 0;
+  max-width: 6rem;
+}
+
+.MainAbout__signature-text p {
+  color: var(--lightBlue);
+  font-size: 1rem;
+  font-style: italic;
+}

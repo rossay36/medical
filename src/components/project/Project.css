@@ -1,0 +1,72 @@
+.Project {
+  max-width: 100%;
+  margin: 4rem 1rem 8rem 1rem;
+}
+
+.Project__image {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.Project__image > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.Project__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+
+.Project__img img {
+  min-height: 25rem;
+  object-fit: cover;
+  transition: 1000ms;
+}
+
+.Project__img:hover img {
+  transform: perspective(200px) translateZ(-10px);
+}
+
+.Project__down-text {
+  position: absolute;
+  inset: auto auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: max-content;
+  padding: 1rem;
+  transition: 1000ms;
+  transform: perspective(400px) translateY(4rem);
+  opacity: 0;
+}
+
+.Project__img:hover .Project__down-text {
+  transform: perspective(400px) translateY(-2rem);
+  opacity: 1;
+}
+
+.Project__plus {
+  position: absolute;
+  background-color: var(--primary-color);
+  padding: 0.4rem;
+  inset: 2rem 1rem auto auto;
+  transition: 1000ms;
+  opacity: 0;
+}
+
+.Project__img:hover .Project__plus {
+  opacity: 1;
+  z-index: 2;
+}
+
+.Project__plus h1 {
+  color: var(--white);
+}

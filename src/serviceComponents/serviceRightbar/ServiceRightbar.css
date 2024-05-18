@@ -1,0 +1,53 @@
+.ServiceRightbar {
+  flex: 6;
+  max-width: 100%;
+  min-height: 100vh;
+
+  color: #000;
+  margin: 4rem 1rem 4rem 1rem;
+}
+
+.ServiceRightbar__img {
+  margin: 3rem 1rem;
+}
+
+.ServiceRightbar__center {
+  gap: 1rem;
+  color: #000;
+}
+
+.ServiceRightbar__center p {
+  margin: 1rem 0;
+}
+
+.ServiceRightbar__groups {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.ServiceRightbar__groups > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.ServiceRightbar__box {
+  display: grid;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.ServiceRightbar__rows {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ServiceRightbar__icon {
+  color: green;
+}
+
+.ServiceRightbar__groups img {
+  min-height: 25rem;
+  object-fit: cover;
+}
